@@ -54,7 +54,7 @@ public class UpdateAthleteController extends Controller{
             warning("Név megadása kötelező");
         }
         if (home.isEmpty()){
-            warning("Település megadása kötelező");
+            warning("Lakhely megadása kötelező");
         }
         this.athlete.setName(name);
         this.athlete.setHome(home);

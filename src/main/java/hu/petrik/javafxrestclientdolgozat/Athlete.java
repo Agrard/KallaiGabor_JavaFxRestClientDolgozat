@@ -1,15 +1,20 @@
 package hu.petrik.javafxrestclientdolgozat;
 
+import com.google.gson.annotations.Expose;
 public class Athlete {
 
     private int id;
 
+    @Expose
     private String name;
 
+    @Expose
     private int age;
 
+    @Expose
     private String home;
 
+    @Expose
     private boolean active;
 
     public Athlete(int id, String name, int age, String home, boolean active) {

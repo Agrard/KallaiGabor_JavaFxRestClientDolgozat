@@ -38,7 +38,7 @@ public class CreateAthleteController  extends Controller{
             return;
         }
         if (home.isEmpty()) {
-            warning("Otthon megadása kötlező!");
+            warning("Lakhely megadása kötlező!");
             return;
         }
         if (age > 35 && activeField.isSelected()) {
@@ -46,7 +46,7 @@ public class CreateAthleteController  extends Controller{
             return;
         }
         if (age < 18 && activeField.isSelected()) {
-            warning("Ez az athlete túl fiatal legalább 18 éves kell hogy aktív legyen!");
+            warning("Ez az athlete túl fiatal legalább 18 éves kell lennie hogy aktív legyen!");
             return;
         }
         Athlete newAthlete = new Athlete(0, name, age, home, activeField.isSelected());
